@@ -1,0 +1,471 @@
+/*--------------------------------------------------------------
+
+            DOM ELEMENTS
+
+--------------------------------------------------------------*/
+html{
+  font-size: 1vw;
+  overflow-x: hidden;
+  width: 100vw;
+  box-sizing: content-box !important;
+}
+@media (max-width: 768px) {
+  html{
+    font-size: 1.2vw;
+  }
+}
+@media (max-width: 576px){
+  html{
+    font-size: 2.8vw;
+  }
+}
+
+
+
+/*--------------------------------------------------------------
+
+            CLASS
+
+--------------------------------------------------------------*/
+
+.parallaxWindow {
+    height: 37vw;
+    overflow: hidden;
+    z-index: 1;
+}
+.parallaxWindow > * {
+    height: 200%;
+    position: relative;
+    top: -100%;
+}
+.bgParallaxShadow{
+  background-color: rgba(0,0,0,0.6);
+  height: 37vw;
+  width: 100vw;
+  position: absolute;
+  z-index: 2;
+}
+#bg1{
+  width: 100%;
+}
+@media (max-width: 576px){
+  .parallaxWindow{
+    height: 70vw;
+  }
+  .bgParallaxShadow{
+    height: 70vw;
+  }
+  #bg1{
+    height: 100%;
+    width: auto;
+  }
+}
+
+
+.photoBorder{
+  width: 20vw;
+  height: 20vw;
+  margin: 5vw 32vw;
+  border-radius: 100%;
+  padding: 1vw;
+  background-color: #bf4dbf;
+  z-index: 3;
+}
+.photoContainer{
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  border-radius: 100%;
+  background-color: #fff;
+  overflow: hidden;
+}
+.photoContainer img{
+  width: 100%;
+  border-radius: 50%;
+}
+.nameContainer{
+  position: absolute;
+  width: 18vw;
+  height: 18vw;
+  border-radius: 100%;
+  background-color: #bf4dbf;
+  margin-top: -12vw;
+  margin-left: 14.5vw;
+  padding: 4.6vw 0.5vw;
+  font-size: 2.6em;
+  z-index: -1;
+  color: #fff;
+}
+.mailBlock{
+  position: absolute;
+  bottom: 1vw;
+  right: 2vw;
+  z-index: 10;
+  font-size: 2em;
+}
+.mailBlock a{
+  color: #fff;
+}
+@media (max-width: 768px) {
+  .nameContainer{
+    font-size: 2.3em;
+  }
+}
+@media (max-width: 576px){
+  .photoBorder{
+    width: 30vw;
+    height: 30vw;
+    margin: 15vw 20vw;
+  }
+  .nameContainer{
+    width: 30vw;
+    height: 30vw;
+    margin-top: -20vw;
+    margin-left: 22vw;
+    font-size: 2em;
+    padding: 6.5vw 0.7vw;
+  }
+  .mailBlock{
+    font-size: 1.5em;
+  }
+}
+
+
+.aboutWindow{
+  background-color: #401a40;
+  padding: 2vw;
+  color: #fff;
+  display: inline;
+}
+.aboutWindow .aboutTitle{
+  color: #d574d5;
+  font-size: 1.1em;
+  font-weight: bold;
+  letter-spacing: 1.3px;
+}
+.aboutWindow .aboutSymbol{
+  font-size: 1.5em;
+  color: #d574d5;
+}
+.aboutWindow p{
+  margin-top: 1.5vw;
+  font-size: 1.1em;
+}
+.lgbtFlag{
+  width: 3vw;
+}
+@media (min-width: 577px){
+  .displayOnPc{
+    display: inline-block;
+  }
+  .displayOnPhone{
+    display: none;
+  }
+}
+@media (max-width: 576px){
+  .aboutWindow{
+    font-size: 1.2em;
+    padding: 6.5vw;
+  }
+  .aboutWindow p{
+    margin-top: 4vw;
+    font-size: 1.15em;
+  }
+  .displayOnPc{
+    display: none;
+  }
+  .displayOnPhone{
+    display: inline-block;
+  }
+  .lgbtFlag{
+    width: 5vw;
+  }
+  #lgbtFlag{
+    position: absolute;
+    left: 5vw;
+    top: 10vw;
+  }
+  #transFlag{
+    position: absolute;
+    right: 5vw;
+    top: 10vw;
+  }
+}
+
+
+.parallaxWindow2 {
+    height: 35vw;
+    width: 100vw;
+}
+.bg2Image{
+  width: 100%;
+}
+.bgParallaxShadow2{
+  background-color: rgba(0,0,0,0.8);
+  height: 35vw;
+  width: 100vw;
+  position: absolute;
+  z-index: 2;
+}
+@media (max-width: 768px) {
+  .parallaxWindow2 {
+      height: 38vw;
+  }
+  .bgParallaxShadow2{
+    height: 38vw;
+  }
+}
+@media (max-width: 576px) {
+  .bg2Image{
+    height: 157vw;
+    width: auto;
+  }
+  .parallaxWindow2 {
+    height: 157vw;
+  }
+  .bgParallaxShadow2{
+    height: 157vw;
+  }
+}
+
+
+.subTitleBlock{
+  background-color: #803380;
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.3em;
+  padding: 1vw 8vw 1vw 1vw;
+  text-align: right;
+}
+@media (max-width: 768px) {
+  .subTitleBlock{
+    text-align: center;
+    padding: 1vw 1vw 1vw 1vw;
+  }
+}
+@media (max-width: 576px) {
+  .subTitleBlock{
+    font-size: 1.155m;
+    padding: 5vw 0vw;
+  }
+}
+
+.profWindow{
+  margin: 2% 4% 0 4%;
+  width: 42%;
+  background-color: rgba(255,255,255, 0.20);
+  padding: 1vw 1vw 1vw 10vw;
+  border-radius: 10px;
+  font-size: 0.8em;
+}
+.profWindow2{
+  margin: 2% auto 0 auto;
+  width: 90%;
+  background-color: rgba(255,255,255, 0.20);
+  padding: 1vw 1vw 1vw 10vw;
+  border-radius: 10px;
+  font-size: 0.8em;
+}
+.prof2Title{
+  margin: 1vw 0 0 0;
+}
+.profWindowText{
+  display:  table-cell  ;
+  color: #ffF;
+  font-size: 1.3em;
+  vertical-align: top;
+  padding-top: 1vw;
+}
+.profWindowText span{
+  font-weight: bold;
+  font-size: 1.1em;
+}
+.profWindowText p{
+  margin-left: 1.5vw;
+  margin-top: 1vw;
+}
+.prof2Text{
+  padding-left: 1.5vw;
+}
+.proIcon{
+  position: absolute;
+  top: 2vw;
+  left: 2vw;
+  height: 6vw;
+  opacity: 0.6;
+}
+
+@media (max-width: 576px) {
+  .profWindow{
+    margin: 4% auto 0 auto;
+    width: 90%;
+    padding: 1vw 1vw 1vw 18vw;
+    font-size: 1em;
+  }
+  .profWindow2{
+    margin: 4% auto 0 auto;
+    padding: 1vw 1vw 1vw 18vw;
+    border-radius: 10px;
+    font-size: 1em;
+  }
+  .prof2Text{
+    padding-left: 7vw;
+  }
+  .proIcon{
+    height: 10vw;
+    top: 5vw;
+    left: 5vw;
+  }
+}
+
+
+.formProf{
+  background-color: #401a40;
+  padding-bottom: 7vw;
+}
+.formCard{
+  background-color: #fff;
+  border-radius: 10px;
+  margin-top: 2.5vw;
+  padding: 1.5vw;
+  cursor: pointer;
+}
+.formIcon{
+  width: 10%;
+}
+.formIcon img{
+  max-height: 2.2vw;
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
+}
+.formIcon img:hover{
+  -webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(0%);
+  transition: filter 0.5s;
+}
+.formIcon.selected img{
+  -webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(0%);
+  transition: filter 0.5s;
+}
+.textTitle{
+  font-weight: bold;
+}
+.formText{
+  padding: 2vw;
+}
+
+.toggleArrow{
+  width: 1.5vw;
+  position: absolute;
+  bottom: 0.5vw;
+  right: 1vw;
+}
+.toggleUp{
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+
+@media (max-width: 768px) {
+  .formCard{
+    font-size: 1.2em;
+  }
+  .formIcon{
+    width: 100%;
+    text-align: center;
+  }
+  .formIcon img{
+    max-height: 4vw;
+  }
+}
+@media (max-width: 576px) {
+  .formCard:first-child{
+    margin-top: 7vw;
+  }
+  .formIcon img{
+    max-height: 10vw;
+    margin-bottom: 2vw;
+  }
+  .formText{
+    padding: 13vw;
+  }
+}
+
+
+.habProg{
+  background-color: #401a40;
+}
+.habBlock{
+  background-color: #fff;
+  border-radius: 10px;
+  margin-top: 2.5vw;
+  padding: 1.5vw 0;
+}
+.habBlock .imgContainer{
+padding: 1.5vw 0;
+}
+.tecPic{
+  width: 40%;
+}
+@media (max-width: 768px) {
+  .tecPic{
+    width: 25%;
+  }
+}
+@media (max-width: 576px) {
+  .tecPic{
+    width: 35%;
+  }
+  .habBlock .imgContainer{
+  padding: 3vw 0;
+  }
+  .habBlock{
+    margin-top: 7vw;
+  }
+}
+
+.noPadd{
+  padding: 0 !important;
+}
+
+.greenbg{
+  background-color: green;
+}
+
+
+/*--------------------------------------------------------------
+
+            IMAGES
+
+--------------------------------------------------------------*/
+
+
+/* #bg2{
+  background-image: url(../img/unam.jpg);
+  background-repeat: repeat-x;
+  background-size: cover;
+} */
+
+
+.tbg{
+  width: 100%;
+  margin-top: -25vw;
+}
+
+.minitetri{
+  position: absolute;
+  right: 1.5vw;
+  bottom: 0.5vw;
+  height: 2vw;
+  opacity: 0.05;
+}
+@media (max-width: 576px) {
+  .minitetri{
+    height: 6vw;
+    right: 1vw;
+    bottom: 1vw;
+  }
+}
