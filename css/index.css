@@ -41,7 +41,8 @@ html{
 
 
 .bgParallaxShadow{
-  background-color: #CA8DCA;
+  background-image: url("../img/machineBG.png");
+  background-size: cover;
   height: 26vw;
   width: 100vw;
   z-index: 2;
@@ -126,15 +127,17 @@ html{
 
 .works{
   padding-bottom: 3vw;
+  background-color: #401a40;
 }
 .workCard{
   width: 44%;
+  background-color: #fcfcfc;
   border: solid 1px #000;
   border-radius: 5px;
   height: 12vw;
-  -webkit-box-shadow: 0px 9px 6px 3px rgba(212,212,212,1);
+  /* -webkit-box-shadow: 0px 9px 6px 3px rgba(212,212,212,1);
   -moz-box-shadow: 0px 9px 6px 3px rgba(212,212,212,1);
-  box-shadow: 0px 9px 6px 3px rgba(212,212,212,1);
+  box-shadow: 0px 9px 6px 3px rgba(212,212,212,1); */
   overflow: hidden;
   margin-top: 2.5vw
 }
@@ -148,7 +151,7 @@ html{
   padding: 1.5vw;
 }
 .workInfo p{
-  margin-top: 1.5vw;
+  margin-top: 0.5vw;
   margin-left: 1vw;
 }
 .wTitle{
@@ -187,5 +190,5 @@ html{
   cursor: pointer;
 }
 .workImgContainer img{
-  width: 100%;
+  max-width: 170%;
 }

@@ -1,0 +1,152 @@
+/*--------------------------------------------------------------
+
+            DOM ELEMENTS
+
+--------------------------------------------------------------*/
+html{
+  font-size: 1vw;
+  overflow-x: hidden;
+  width: 100vw;
+  box-sizing: content-box !important;
+}
+.nav-item{
+  padding: 0.5vw 1vw;
+}
+.navbar-brand{
+  font-size: 1.3vw;
+}
+.container-fluid{
+  background-color: #000;
+}
+
+@media (max-width: 768px) {
+  html{
+    font-size: 1.2vw;
+  }
+  .navbar-brand{
+    font-size: 2.5vw;
+  }
+  .navbar{
+    font-size: 1.5vw;
+  }
+}
+@media (max-width: 576px){
+  html{
+    font-size: 2.8vw;
+  }
+  .navbar-brand{
+    font-size: 5vw;
+  }
+  .navbar{
+    font-size: 3vw;
+  }
+}
+
+
+.mainInfo{
+  background-color: #000;
+  height: 100vh;
+  padding: 5vw 3vw 1vw 3vw;
+}
+.mainTitle{
+  font-size: 2em;
+  color: #803380;
+}
+.firstWord{
+  font-weight: bold;
+  font-size: 1.2em;
+}
+.mainText{
+  margin-top: 2vw;
+  color: #e6e6e6;
+  font-size: 1.1em;
+}
+@media (max-width: 768px){
+  .mainText{
+    font-size: 1.3em;
+  }
+}
+@media (max-width: 576px){
+  .mainInfo{
+    height: auto;
+    padding: 5vw 5vw 10vw 5vw;
+  }
+  .mainText{
+    margin-top: 5vw;
+    color: #e6e6e6;
+    font-size: 1em;
+  }
+}
+
+.galContainer{
+  background: #fff;
+  padding-right: 2vw;
+}
+
+.imgBlock{
+  height: 30vh;
+  padding: 2vw 1.5vw;
+}
+.imgContainer{
+  height: 100%;
+  overflow: hidden;
+  border: solid 1px #000;
+  border-radius: 5px;
+}
+.imgContainer img{
+  width: 130%;
+  cursor: pointer;
+}
+@media (max-width: 768px){
+  .imgBlock{
+    height: 20vh;
+    padding: 2vw 1vw;
+  }
+}
+@media (max-width: 576px){
+  .imgBlock{
+    height: 35vw;
+  }
+}
+
+
+.shadow{
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0,0,0,0.5);
+  display: none;
+}
+.viewWindow{
+  margin-top: 5vw;
+  height: 40vw;
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 1vw;
+  overflow-y: auto;
+}
+.closeBtn{
+  width: 2vw;
+  position: absolute;
+  right: 2vw;
+  cursor: pointer;
+}
+.closeBtn:hover{
+  opacity: 0.5;
+}
+.viewPic{
+  margin-top: 3vw;
+  width: 100%;
+}
+@media (max-width: 576px){
+  .closeBtn{
+    width: 5vw;
+  }
+  .viewWindow{
+    height: 70vw;
+  }
+  .viewPic{
+    margin-top: 10vw;
+  }
+}
