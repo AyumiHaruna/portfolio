@@ -39,26 +39,43 @@ html{
   }
 }
 
+.parallaxWindow {
+  height: 30vw;
+  overflow: hidden;
+  z-index: 1;
+}
 
 .bgParallaxShadow{
-  background-image: url("../img/machineBG.png");
   background-size: cover;
-  height: 26vw;
+  height: 30vw;
   width: 100vw;
+  position: absolute;
   z-index: 2;
 }
+#bg1{
+  width: 100%;
+}
 @media (max-width: 576px){
+  .parallaxWindow{
+    height: 70vw;
+  }
+  .bgParallaxShadow{
+    height: 70px;
+  }
   .bgParallaxShadow{
     height: 70vw;
   }
+  #bg1{
+    height: 30%;
+    width: auto;
+  }
 }
-
 
 
 .photoBorder{
   width: 15vw;
   height: 15vw;
-  margin: 3vw 35vw;
+  margin: 3vw 37vw;
   border-radius: 100%;
   padding: 1vw;
   background-color: #bf4dbf;
@@ -126,69 +143,59 @@ html{
 
 
 .works{
-  padding-bottom: 3vw;
-  background-color: #401a40;
-}
-.workCard{
-  width: 44%;
+  padding: 3vw;
   background-color: #fcfcfc;
+}
+.cardContainer{
+  padding: 2vw 2vw;
+}
+.cardContainer a{
+  text-decoration: none;
+}
+.card{
   border: solid 1px #000;
   border-radius: 5px;
+  -webkit-box-shadow: 4px 4px 5px 0px rgba(189,189,189,1);
+  -moz-box-shadow: 4px 4px 5px 0px rgba(189,189,189,1);
+  box-shadow: 4px 4px 5px 0px rgba(189,189,189,1);
+  cursor: pointer
+}
+.cardHeader{
   height: 12vw;
-  /* -webkit-box-shadow: 0px 9px 6px 3px rgba(212,212,212,1);
-  -moz-box-shadow: 0px 9px 6px 3px rgba(212,212,212,1);
-  box-shadow: 0px 9px 6px 3px rgba(212,212,212,1); */
   overflow: hidden;
-  margin-top: 2.5vw
 }
-.withMarginRight{
-  margin-right: 4vw;
+.cardHeader img{
+  width: 100%;
+  min-height: 12vw;
 }
-.withMarginLeft{
-  margin-left: 4vw;
-}
-.workInfo{
-  padding: 1.5vw;
-}
-.workInfo p{
-  margin-top: 0.5vw;
-  margin-left: 1vw;
-}
-.wTitle{
-  font-size: 1.2em;
+.cardTitleSquare{
+  padding: 1.8vw;
+  background-color: #bf4dbf;
   font-weight: bold;
-  color: #CC52CC;
+  font-size: 1.1em;
+  text-align: center;
+  color: #fff;
 }
-@media (max-width: 768px) {
-  .workCard{
-    height: 15vw;
-  }
-  .workInfo{
-    padding-left: 3vw;
-  }
+.cardDescription{
+  color: #000;
+  padding: 1vw 2vw;
+  font-size: 1.05em;
+  line-height: 30px;
 }
-@media (max-width: 576px) {
-  .withMarginRight{
-    margin-right: 0;
+
+@media (max-width: 576px){
+  .cardContainer{
+    padding: 5vw 10vw;
   }
-  .withMarginLeft{
-    margin-left: 0;
+  .cardHeader{
+    height: 30vw;
   }
-  .workCard{
-    width: 90%;
-    height: 28vw;
-    margin: 3vw 4% 0 4%;
+  .cardTitleSquare{
+    padding: 4vw;
   }
-  .workInfo{
-    padding-left: 5vw;
+  .cardDescription{
+    padding: 2vw 4vw;
   }
 }
 
 
-.workImgContainer{
-  padding: 0;
-  cursor: pointer;
-}
-.workImgContainer img{
-  max-width: 170%;
-}

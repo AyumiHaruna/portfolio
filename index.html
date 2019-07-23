@@ -10,6 +10,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
+    <script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@4.0.0/dist/simpleParallax.min.js"></script>
+
     <link rel="stylesheet" href="css/index.css">
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -60,6 +62,11 @@
       </div>
 
       <div class="row">
+
+        <div class="col-12 noPadd parallaxWindow" style="padding: 0px">
+            <img src="img/machineBG.png" alt="bg1" id="bg1" class="bg1">
+        </div>
+
         <div class="bgParallaxShadow col-12">
           <div class="photoBorder">
             <div class="photoContainer">
@@ -78,122 +85,129 @@
 
       <div class="row">
         <div class="col-12 works">
-          <div class="row justify-content-between">
-            <div class="workCard withMarginLeft">
-              <div class="row">
-                <div class="col-8 workInfo">
-                  <span class="wTitle">Curriculum Vitae Web</span>
-                  <p>-Información personal <br>
-                  -Información académica <br>
-                -Experiencia profesional <br></p>
-                </div>
-                <div class="col-4 workImgContainer">
-                  <a href="cv.html">
-                    <img src="img/cvMini.png" alt="">
-                  </a>
-                </div>
-              </div>
-            </div>
+          <div class="row justify-content-md-center">
 
-            <div class="workCard withMarginRight">
-              <div class="row">
-                <div class="col-8 workInfo">
-                  <span class="wTitle">Unity - DogRunner</span>
-                  <p>Minijuego basado en el juego del dinosaurio de Chrome. <br>
-                  nuestro segundo minijuego desarrollado con Unity</p>
-                </div>
-                <div class="col-4 workImgContainer">
-                  <a href="https://ayumiharuna.github.io/dogRunner/">
-                    <img src="img/dogRunner.jpg" alt="">
-                  </a>
-                </div>
-              </div>  
-            </div>
-          </div>
+            
+              <div class="col-sm-3 cardContainer">
+                <a href="cv.html">
+                  <div class="card">
+                    <div class="cardHeader">
+                        <img src="img/cvMini.png" alt="">
+                    </div>
+                    <div class="cardTitleSquare">
+                        Curriculum Vitae Web
+                    </div>
+                    <div class="cardDescription">
+                        <p>-Información personal <br>
+                          -Información académica <br>
+                          -Experiencia profesional <br></p>
+                    </div>
+                  </div>
+                </a>  
+              </div>     
 
-          <div class="row justify-content-between">
-            <div class="workCard withMarginLeft">
-              <div class="row">
-                <div class="col-8 workInfo">
-                  <span class="wTitle">Unity - Nekonoid</span>
-                  <p>Sencillo juego basado en Arkanoid, desarrollado en Unity y pensado para dispositivos móviles.
-                    Mi primer desarrollo de prueba aprendiendo a crear videojuegos. </p>
-                </div>
-                <div class="col-4 workImgContainer">
+              <div class="col-sm-3 cardContainer">
+                <a href="https://ayumiharuna.github.io/dogRunner/">
+                  <div class="card">
+                    <div class="cardHeader">
+                        <img src="img/dogRunner.jpg" alt="">
+                    </div>
+                    <div class="cardTitleSquare">
+                        Unity - DogRunner
+                    </div>
+                    <div class="cardDescription">
+                        <p>Minijuego basado en el juego del dinosaurio de Chrome. &nbsp;
+                          Nuestro segundo minijuego desarrollado con Unity</p>
+                    </div>
+                  </div>
+                </a>  
+              </div>    
+            
+              <div class="col-sm-3 cardContainer">
                   <a href="https://ayumiharuna.github.io/Nekonoid/">
-                    <img src="img/nekoMini.png" alt="">
-                  </a>
-                </div>
-              </div>
-            </div>
+                    <div class="card">
+                      <div class="cardHeader">
+                          <img src="img/nekoMini.png" alt="">
+                      </div>
+                      <div class="cardTitleSquare">
+                          Unity - Nekonoid
+                      </div>
+                      <div class="cardDescription">
+                          <p>Sencillo juego basado en Arkanoid, desarrollado en Unity.</p>
+                      </div>
+                    </div>
+                  </a>  
+                </div>    
+                  
+                <div class="col-sm-3 cardContainer">
+                    <a href="https://ayumiharuna.github.io/StageSelectSystem/index.html">
+                      <div class="card">
+                        <div class="cardHeader">
+                            <img src="img/StageSelectMini.png" alt="">
+                        </div>
+                        <div class="cardTitleSquare">
+                            Unity - Stage Select System
+                        </div>
+                        <div class="cardDescription">
+                            <p>Sistema de selección de escenario<br>
+                              pensado para funcionar con Touch</p>
+                        </div>
+                      </div>
+                    </a>  
+                </div>    
 
-            <div class="workCard withMarginRight">
-              <div class="row">
-                <div class="col-8 workInfo">
-                  <span class="wTitle">Unity - Stage Select System</span>
-                  <p>Sistema de selección de escenario, pensado en dispositivos móviles <br>
-                  funciona ubicando la casilla actual, las posibilidades de movimiento, y
-                  las coordenadas de las casillas adyacentes</p>
-                </div>
-                <div class="col-4 workImgContainer">
-                  <a href="https://ayumiharuna.github.io/StageSelectSystem/index.html">
-                    <img src="img/StageSelectMini.png" alt="">
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
+                <div class="col-sm-3 cardContainer">
+                    <a href="galAlmacen.html">
+                      <div class="card">
+                        <div class="cardHeader">
+                            <img src="img/almacen/alm1.jpg" alt="">
+                        </div>
+                        <div class="cardTitleSquare">
+                            Laravel - Sistema de control del almacén
+                        </div>
+                        <div class="cardDescription">
+                            <p>Contiene el inventario del almacén y administra la información de entradas y
+                                salidas de material y herramientas. </p>
+                        </div>
+                      </div>
+                    </a>  
+                </div> 
 
-          <div class="row justify-content-between">
-            <div class="workCard withMarginLeft">
-              <div class="row">
-                <div class="col-8 workInfo">
-                  <span class="wTitle">Laravel - Sistema de control del almacén</span>
-                  <p>Contiene el inventario del almacén y administra la información de entradas y
-                  salidas de material y herramientas. </p>
-                </div>
-                <div class="col-4 workImgContainer">
-                  <a href="galAlmacen.html">
-                    <img src="img/almacen/alm1.jpg" alt="">
-                  </a>
-                </div>
-              </div>
-            </div>
-                    
-            <div class="workCard withMarginRight">
-              <div class="row">
-                <div class="col-8 workInfo">
-                  <span class="wTitle">PHP - Sistema de control de nómina</span>
-                  <p>Facilita la generación de nóminas concentrando una base de datos de contratos
-                  del personal. Además de generar las nóminas, tambien genera la lista de cheques
-                  en la base de datos del sistema de control financiero (SICOFI).</p>
-                </div>
-                <div class="col-4 workImgContainer">
-                  <a href="galNomina.html">
-                    <img src="img/nomina/nom1.jpg" alt="">
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
+                <div class="col-sm-3 cardContainer">
+                    <a href="galNomina.html">
+                      <div class="card">
+                        <div class="cardHeader">
+                            <img src="img/nomina/nom1.jpg" alt="">
+                        </div>
+                        <div class="cardTitleSquare">
+                            PHP - Sistema de control de nómina
+                        </div>
+                        <div class="cardDescription">
+                            <p>Sistema de control de nómina desarrollado para la CNCPC que trabaja en conjuto
+                              con SICOFI para la generación de cheques al personal
+                            </p>
+                        </div>
+                      </div>
+                    </a>  
+                </div> 
 
-          <div class="row justify-content-between">
-            <div class="workCard withMarginLeft">
-              <div class="row">
-                <div class="col-8 workInfo">
-                  <span class="wTitle">PHP - SICOFI</span>
-                  <p>En sus inicios solo contenía una base de datos de ingresos y egresos, mas tarde se
-                  añadieron funcionalidades como: Solicitudes de Fondos, Gasto por proyectos y capítulos,
-                  elaboración de formatos de cheques y pólizas, reportes por proyecto, avisos por correo, etc.</p>
-                </div>
-                <div class="col-4 workImgContainer">
-                  <a href="galSicofi.html">
-                    <img src="img/sicofi/sic2.jpg" alt="">
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
+                <div class="col-sm-3 cardContainer">
+                    <a href="galSicofi.html">
+                      <div class="card">
+                        <div class="cardHeader">
+                            <img src="img/sicofi/sic2.jpg" alt="">
+                        </div>
+                        <div class="cardTitleSquare">
+                            PHP - SICOFI
+                        </div>
+                        <div class="cardDescription">
+                            <p>Sistema de control financiero desarrollado para la CNCPC</p>
+                        </div>
+                      </div>
+                    </a>  
+                </div> 
+
+            </div>          
         </div>
 
 
@@ -204,6 +218,9 @@
   </body>
 
   <script type="text/javascript">
-
+    var parallax1 = document.getElementsByClassName('bg1');
+    new simpleParallax(parallax1, {
+      scale: 2
+    }); 
   </script>
 </html>
